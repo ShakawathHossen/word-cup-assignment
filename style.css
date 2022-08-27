@@ -1,0 +1,114 @@
+/* font links  */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+/* Common utilities  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --main-color: #fff;
+    --button-color: #DD0000;
+}
+
+body {
+    background-color: rgb(255, 255, 255);
+    font-family: 'Poppins', sans-serif;
+}
+
+header {
+    position: relative;
+    margin: 50px 100px;
+    border-radius: 30px;
+    background-color: #161616;
+    align-items: center;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+}
+
+.header-left {
+    color: var(--main-color);
+    padding: 90px 0px 90px 90px;
+}
+
+.header-left h1 {
+    font-size: 70px;
+    line-height: 70px;
+}
+span{
+    color: var(--button-color);
+}
+.header-left p {
+    font-size: 16px;
+    line-height: 26px;
+    padding: 20px 0 30px 0;
+    font-weight: 300;
+    text-align: justify;
+
+}
+
+.header-left a {
+    text-decoration: none;
+    background-color: var(--button-color);
+    padding: 15px 30px;
+    color: var(--main-color);
+    border-radius: 5px;
+}
+
+.fa-arrow-right {
+    margin-left: 10px;
+}
+
+.header-right {
+    padding: 30px 0px 0px 30px;
+}
+
+.header-right img {
+    position: absolute;
+    width: 500px;
+    top: 43px;
+}
+
+/* media quary  */
+@media only screen and (max-width:688px) {
+
+    header {
+        margin: 10px 20px;
+        border-radius: 15px;
+        align-items: center;
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+    .header-left {
+        order: 1;
+        text-align: center;
+        padding: 28px 38px 21px 38px;
+    }
+    .header-left h1{
+        font-size: 22px;
+        line-height: 33px;
+        font-weight: 700;
+    }
+    .header-left p{
+        font-size: 14px;
+        text-align: justify;
+        line-height:24px ;
+    }
+    .header-left a{
+        padding: 8px 12px;
+        font-size: 14px;
+    }
+    .header-right{
+        order: 2;
+        text-align: center;
+        padding: 0px;
+
+    }
+    .header-right img{
+        width: 250px;
+        position: relative;
+        top: 7px;
+    }
+}
