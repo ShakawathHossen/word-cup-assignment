@@ -9,6 +9,7 @@
 }
 
 :root {
+    --background-color: #161616;
     --main-color: #fff;
     --button-color: #DD0000;
 }
@@ -20,9 +21,9 @@ body {
 
 header {
     position: relative;
-    margin: 50px 100px;
+    margin: 50px 60px;
     border-radius: 30px;
-    background-color: #161616;
+    background-color: var(--background-color);
     align-items: center;
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -37,9 +38,11 @@ header {
     font-size: 70px;
     line-height: 70px;
 }
-span{
+
+span {
     color: var(--button-color);
 }
+
 .header-left p {
     font-size: 16px;
     line-height: 26px;
@@ -71,7 +74,141 @@ span{
     top: 43px;
 }
 
+/* header end  */
+
+.hero {
+
+    display: grid;
+    margin: 50px 60px;
+    grid-gap:25px ;
+    grid-template-columns: 3fr 9fr;
+}
+
+.buttons {
+    border-radius: 10px;
+    background-color: var(--background-color);
+    display: flex;
+    padding: 20px 0px;
+    align-items: center;
+    flex-direction: column;
+}
+
+.buttons a {
+    text-decoration: none;
+    background-color: var(--button-color);
+    width: 160px;
+    height: 50px;
+    padding: 13px 0 0 0;
+    text-align: center;
+    align-items: center;
+    margin: 15px 10px;
+    color: var(--background-color);
+    background-color: var(--main-color);
+    border-radius: 5px;
+}
+
+#special-button {
+    background-color: var(--button-color);
+    color: var(--main-color);
+}
+
+.buttons a:hover {
+    box-shadow: 0px 0px 5px 1px #000;
+}
+
+.hero-right {
+}
+.matches{
+    display: grid;
+    margin:;
+    grid-gap:25px ;
+    grid-template-columns:1fr 1fr 1fr;
+}
+.match{
+    width: 312px;
+    border: 1px solid gainsboro;
+    border-radius: 10px;
+}
+.match-banner{
+    display: flex;
+    justify-content: center;
+    width: 312px;
+    align-items: center;
+}
+.match-details{
+    padding: 20px 10px;
+}
+.match-details a{
+    text-decoration: none;
+    padding: 6px 12px;
+    border-radius: 6px;
+    color: #161616;
+    border: 1px solid #161616;
+}
+.match-details h4{
+    padding: 20px 0px;
+}
+.match-icons{
+    display: flex;
+    gap: 50px;
+    color: #161616a7;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 /* media quary  */
+ /* large device  */
+@media only screen and (min-width: 1585px) {
+    .header-left {
+        padding: 28px 58px 21px 80px;
+    }
+    .header-left h1{
+        font-size: 100px;
+        line-height: 100px;
+        font-weight: 700;
+    }
+    .header-left p{
+        font-size: 22px;
+        text-align: justify;
+        padding: 40px 0 50px 0;
+        line-height:32px ;
+    }
+    .header-left a{
+        padding: 20px 40px;
+        font-size: 14px;
+    }
+    .header-right img{
+        width: 600px;
+        position: relative;
+        top: 7px;
+    }
+}
 @media only screen and (max-width:688px) {
 
     header {
@@ -86,27 +223,32 @@ span{
         text-align: center;
         padding: 28px 38px 21px 38px;
     }
-    .header-left h1{
+
+    .header-left h1 {
         font-size: 22px;
         line-height: 33px;
         font-weight: 700;
     }
-    .header-left p{
+
+    .header-left p {
         font-size: 14px;
         text-align: justify;
-        line-height:24px ;
+        line-height: 24px;
     }
-    .header-left a{
+
+    .header-left a {
         padding: 8px 12px;
         font-size: 14px;
     }
-    .header-right{
+
+    .header-right {
         order: 2;
         text-align: center;
         padding: 0px;
 
     }
-    .header-right img{
+
+    .header-right img {
         width: 250px;
         position: relative;
         top: 7px;
