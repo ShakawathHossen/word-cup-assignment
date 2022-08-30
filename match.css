@@ -20,7 +20,6 @@ body {
 }
 
 header {
-
     margin: 50px 60px;
     border-radius: 30px;
     background-color: var(--background-color);
@@ -70,13 +69,12 @@ span {
 
 .header-right img {
     width: 500px;
- 
+    top: 43px;
 }
 .header-right img:hover{
     transition: 2s;
     transform: translate(20px, 0);
 }
-
 /* header end  */
 
 .hero {
@@ -126,6 +124,7 @@ span {
 }
 
 .match {
+    padding: 20px 0;
     width: 312px;
     border: 1px solid gainsboro;
     border-radius: 10px;
@@ -133,79 +132,27 @@ span {
 
 .match-banner {
     display: flex;
+    gap: 20px;
     justify-content: center;
     width: 312px;
     align-items: center;
 }
 
 .match-details {
+    text-align: center;
     padding: 20px 10px;
 }
 
-.match-details a {
-    text-decoration: none;
-    padding: 6px 12px;
-    border-radius: 6px;
-    color: #161616;
-    border: 1px solid #161616;
+.match-details h3 {
+    padding: 15px 0px;
 }
 
-.match-details h4 {
-    padding: 20px 0px;
+.match-details p {
+    font-size: 16px;
+    color: #B9B9B9;
 }
 
-.match-icons {
-    display: flex;
-    gap: 50px;
-    color: #161616a7;
-}
-.viewall{
-    text-decoration: none;
-    background-color: var(--button-color);
-    padding: 10px 30px;
-    margin-top: 20px;
-    text-align: center;
-    color: var(--main-color);
-    border-radius: 5px;
-    display: none;
-}
 /* hero section end  */
-.news-summary {
-    display: grid;
-    margin: 100px 60px;
-    grid-gap: 25px;
-    padding: 50px;
-    border-radius: 30px;
-    background-color: #161616;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-gap: 80px;
-}
-
-.total-news {
-    border-radius: 10px;
-    border: 1px solid rgb(255, 255, 255);
-    text-align: center;
-}
-
-.total-news h2 {
-    font-size: 28px;
-    padding: 20px 0px;
-    color: #fff;
-}
-
-.total-news i {
-    font-size: 50px;
-    padding: 0 0 10px 0;
-    color: #DD0000;
-}
-
-.number {
-    border-radius: 9px 9px 0px 0px;
-    background-color: #DD0000;
-    color: #fff;
-}
-
-/* extra end  */
 footer {
     background-color: #161616;
     display: grid;
@@ -235,14 +182,12 @@ hr {
     padding: 0px 15px;
 
 }
-
-.social a {
+.social a{
     color: #fff;
     font-size: 24px;
     padding: 10px 15px;
 }
-
-.social a:hover {
+.social a:hover{
     color: #d4d4d4;
     font-size: 26px;
 }
@@ -266,38 +211,34 @@ hr {
 
 
 
+
 /* media quary  */
-/* large device  */
-@media only screen and (min-width: 1585px) {
+ /* large device  */
+ @media only screen and (min-width: 1585px) {
     .header-left {
         padding: 28px 58px 21px 80px;
     }
-
-    .header-left h1 {
+    .header-left h1{
         font-size: 100px;
         line-height: 100px;
         font-weight: 700;
     }
-
-    .header-left p {
+    .header-left p{
         font-size: 22px;
         text-align: justify;
         padding: 40px 0 50px 0;
-        line-height: 32px;
+        line-height:32px ;
     }
-
-    .header-left a {
+    .header-left a{
         padding: 20px 40px;
         font-size: 14px;
     }
-
-    .header-right img {
+    .header-right img{
         width: 600px;
         position: relative;
         top: 7px;
     }
 }
-
 /* mobile device  */
 @media only screen and (max-width:688px) {
 
@@ -343,62 +284,38 @@ hr {
         position: relative;
         top: 7px;
     }
-
     /* header end  */
-    .hero {
+    .hero{
         display: flex;
         flex-direction: column;
         align-content: center;
     }
-
     .matches {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
-
-    .buttons {
+    .buttons{
         background-color: #fff;
     }
-
-    .buttons a {
+    .buttons a{
         border: 1px solid #B9B9B9;
     }
-
-    #special-button {
+    #special-button{
         border: none;
     }
-
     /* hero end  */
-    .news-summary {
-        display: flex;
-        flex-direction: column;
-        background-color: #fff;
-        grid-gap: 30px;
-        margin: 0;
-    }
-
-    .total-news {
-        border: 1px solid #B9B9B9;
-    }
-
-    .total-news h2 {
-        color: black;
-    }
-
-    footer {
+    footer{
         display: flex;
         flex-direction: column;
     }
-
     .footer-links {
         display: flex;
         flex-direction: column;
     }
 }
-
 /* tab device  */
-@media only screen and (min-width: 689px) and (max-width:1024px) {
+@media only screen and (min-width: 689px) and (max-width:1024px){
 
     header {
         margin: 10px 20px;
@@ -438,15 +355,11 @@ hr {
         position: relative;
         top: 7px;
     }
-
-    .hero {
+    .hero{
         display: flex;
         align-items: center;
         margin: 50px 20px;
         flex-direction: column;
-    }
-    .viewall{
-        display: block;
     }
     .buttons {
         justify-content: center;
@@ -455,48 +368,22 @@ hr {
         background-color: #fff;
         flex-direction: row;
     }
-
-    .buttons a {
+    .buttons a{
         border: 1px solid #B9B9B9;
     }
-
     .matches {
         display: grid;
         grid-gap: 25px;
         grid-template-columns: 1fr 1fr;
     }
-
     /* hero end  */
-    .news-summary {
-        margin: 50px 25px;
-        grid-gap: 25px;
-        padding: 20px;
-        border-radius: 20px;
-        grid-gap: 10px;
-    }
-
-    .number h1 {
-        font-size: 26px;
-    }
-
-    .total-news i {
-        font-size: 30px;
-    }
-
-    .total-news h2 {
-        font-size: 20px;
-        padding: 15px 0px;
-    }
-
-    .footer-details h1 {
+    .footer-details h1{
         font-size: 32px;
     }
-
-    .footer-details p {
+    .footer-details p{
         font-size: 9px;
     }
-
-    .social a {
+    .social a{
         font-size: 16px;
     }
 
